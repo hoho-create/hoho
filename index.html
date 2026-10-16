@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>바른 만남 프라이빗 클럽</title>
+    <style>
+        :root {
+            --primary-color: #1A237E; /* 신뢰감을 주는 다크 네이비 */
+            --secondary-color: #C5CAE9;
+            --accent-color: #D32F2F; /* 포인트 컬러 (열정, 애국) */
+            --text-color: #333;
+            --bg-color: #F8F9FA;
+        }
+
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            line-height: 1.6;
+        }
+
+        /* 히어로 섹션 (첫 화면) */
+        .hero {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            word-break: keep-all;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+            margin-bottom: 30px;
+            word-break: keep-all;
+        }
+
+        /* 공통 컨테이너 */
+        .container {
+            max-width: 600px; /* 모바일 가독성을 위해 폭 제한 */
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-bottom: 30px;
+        }
+
+        /* 프로세스 섹션 */
+        .process-box {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .process-box h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+
+        .process-box p {
+            margin-bottom: 0;
+            color: #555;
+        }
+
+        /* 검증 룰 섹션 */
+        .rules {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .rules ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .rules li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .rules li:last-child {
+            border-bottom: none;
+        }
+
+        .rules li::before {
+            content: "✓";
+            color: var(--accent-color);
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        /* CTA 버튼 */
+        .cta-button {
+            display: block;
+            width: 100%;
+            padding: 18px 0;
+            background-color: var(--accent-color);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 8px;
+            margin-top: 40px;
+            transition: background-color 0.3s;
+            box-shadow: 0 4px 6px rgba(211, 47, 47, 0.3);
+        }
+
+        .cta-button:hover {
+            background-color: #B71C1C;
+        }
+
+        /* 푸터 */
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #888;
+            font-size: 0.9rem;
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <h1>가치관이 통하는<br>바른 만남 프라이빗 클럽</h1>
+        <p>확실한 국가관과 자유민주주의 철학을 공유하는<br>남녀를 위한 프리미엄 1:1 매칭 & 라운지</p>
+    </div>
+
+    <div class="container">
+        <h2 class="section-title">왜 우리 클럽인가요?</h2>
+        <div class="rules">
+            <ul>
+                <li><strong>철저한 사상 검증</strong>: 가치관이 맞지 않는 사람과의 감정 소모를 없앱니다.</li>
+                <li><strong>수질 관리</strong>: 100% 심사제를 통과한 진성 유저만 입장합니다.</li>
+                <li><strong>프라이빗 네트워크</strong>: 정치, 경제, 사회 이슈를 편하게 나눌 수 있는 보안 톡방(시그널/카톡)을 제공합니다.</li>
+                <li><strong>맞춤형 1:1 매칭</strong>: 데이터베이스를 기반으로 가장 잘 어울리는 상대를 제안합니다.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container" style="padding-top: 0;">
+        <h2 class="section-title">가입 프로세스</h2>
+        
+        <div class="process-box">
+            <h3>1. 입장권(PDF) 구매</h3>
+            <p>크티(Ctee)를 통해 '클럽 운영 규정 및 성공적인 대화 가이드'가 담긴 PDF 입장권을 구매합니다. (최소한의 진정성 확인)</p>
+        </div>
+
+        <div class="process-box">
+            <h3>2. 가치관 심사 폼 작성</h3>
+            <p>PDF 내부에 포함된 링크를 통해 프로필과 가치관 문답(구글 폼)을 제출합니다.</p>
+        </div>
+
+        <div class="process-box">
+            <h3>3. 라운지 입장 & 매칭 시작</h3>
+            <p>심사 통과 시 프라이빗 라운지 링크가 발송되며, 이후 운영진을 통한 1:1 매칭 제안을 받을 수 있습니다.</p>
+        </div>
+
+        <!-- 크티 구매 링크를 href 안에 넣으시면 됩니다 -->
+        <a href="https://ctee.kr/본인의_크티_상품_링크" class="cta-button">입장권 구매하고 가입 심사받기</a>
+    </div>
+
+    <footer>
+        <p>© 2026 바른 만남 프라이빗 클럽. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
